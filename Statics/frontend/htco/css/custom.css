@@ -1,0 +1,52 @@
+﻿
+.main-menu ul li .mega-menu.all-category {
+    left: 0;
+    width: 100%;
+    overflow: visible;
+}
+
+.main-menu ul li .mega-menu.all-category  .category-menu-list ul li {
+    width: 100%;
+}
+
+.main-menu ul li:hover .mega-menu.all-category a {
+    background: transparent;
+    color: #333;
+    padding: 0px 30px;
+}
+
+.main-menu ul li .mega-menu.all-category  .category-menu-list ul li a i {
+    right: 25px;
+    position: absolute;
+    line-height: 50px;
+}
+
+.main-menu ul li .mega-menu.all-category  .category-menu-list ul li .cat-left-drop-menu a {
+    min-height: 30px;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.main-menu ul li .mega-menu.all-category  .category-menu-list ul li .cat-left-drop-menu a.menu-item-heading {
+    font-weight: 600;
+    padding: 0 10px;
+}
+
+.percent {
+    position: absolute;
+    top: 40%;
+    right: 0;
+    background: #ff3a3a;
+    padding: 6px 10px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+}
+.percent span{
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.shop-product-area .single-product .price-box {
+    min-height: 48px;
+}
