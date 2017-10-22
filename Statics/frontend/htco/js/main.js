@@ -83,6 +83,25 @@
         navigation: true,
         navigationText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
     });
+
+    $(".related-carousel").owlCarousel({
+        autoPlay: false,
+        slideSpeed: 2000,
+        items: 3,
+        itemsCustom: [
+        [0, 1],
+        [450, 1],
+        [480, 2],
+        [600, 2],
+        [700, 2],
+        [768, 2],
+        [992, 3],
+        [1199, 3]
+        ],
+        pagination: true,
+        navigation: true,
+        navigationText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
+    });
     
     $(".feature-carousel-np").owlCarousel({
         autoPlay: false,
@@ -194,6 +213,7 @@
      jQuery MeanMenu
     ------------------------------ */
     jQuery('nav#dropdown').meanmenu();
+    jQuery('nav#dropdown-category').meanmenu();
     /*----------------------------
 
     /*----------------------------
@@ -201,6 +221,30 @@
     ------------------------------ */
     $(document).ready(function() {
         $('.fancybox').fancybox();
+        $('.v-megamenu-title').off();
+        $('.v-megamenu-title').click(function () {
+            $(this).toggleClass('active');
+            var menuBox = $(this).next('.v-megamenu');
+            if ($(this).hasClass('active')) {
+                $(menuBox).show();
+            } else {
+                $(menuBox).hide();
+            }
+            
+        });
+
+        $('.opener').off();
+        $('.opener').click(function () {
+            $(this).toggleClass('opn');
+            var menuBoxList = $(this).next('.submenu');
+            if ($(this).hasClass('opn')) {
+                $(menuBoxList).show();
+            } else {
+                $(menuBoxList).hide();
+            }
+
+        });
+
     });
     /*----------------------------
          Elevate Zoom active
