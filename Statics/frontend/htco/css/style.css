@@ -346,6 +346,7 @@ body {
 /*2.2 header bottom */
 .logo-area a img {
     margin: 15px 0;
+	    height: 100px;
 }
 .block-header {
     margin-top: 8px;
